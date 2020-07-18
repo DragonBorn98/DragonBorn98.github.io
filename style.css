@@ -54,9 +54,13 @@ nav {
     border-bottom: 2px solid black;
 }
 main {
-    background: #ffffff url("vinil-bg.jpg") no-repeat center;
+   /* background: #ffffff url("vinil-bg.jpg") no-repeat center; */
+   background-color: rgba(226, 226, 226, 0.699);
     min-height: 50em;
     width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 .topnav .icon{
     display: none;
@@ -80,6 +84,7 @@ main {
     }
     .topnav.responsive{
         position: relative;
+        box-shadow: 0 6px 6px -4px  rgba(75, 75, 75, 0.678);
     }
     .topnav.responsive a.icon{
         position: absolute;
@@ -93,3 +98,40 @@ main {
     }
   
 }
+del{
+    color: red;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 30px;
+  height: 200px;
+  align-items: start;
+  text-align: center;
+  
+}
+.grid > article {
+  border: 1px solid #ccc;
+  box-shadow: 10px 10px 15px 0px  rgba(0, 0, 0, 0.5);
+  background-color: white;
+  margin-top: 20px;
+}
+.grid > article img {
+  max-width: 100%;
+}
+.text {
+  padding: 0px 20px 20px;
+}
+.text > button {
+  background: rgba(255, 0, 0, 0.781);
+  border: 0;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  }
+  .text p{
+      color: gray;
+  }
+  button{
+      margin-top: 5px;
+  }
