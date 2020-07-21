@@ -103,9 +103,17 @@ main {
         float: none;
         display: block;
         text-align: left;
+        
+    } 
+    #navigation-top-item:hover{
         background-color: thistle;
     }
-  
+    #navigation-top-item:active{
+        background-color: thistle;
+    }
+    #navigation-top-item a{
+        display: none;
+    }
 }
 del{
     color: red;
