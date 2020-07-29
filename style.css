@@ -3,7 +3,7 @@
     padding: 0;
 }
 html{
-    width: 100%;
+    max-width: 100%;
 }
 a{
     text-decoration: none;
@@ -26,11 +26,19 @@ footer {
     background-color: black;
     
 }
-h1 {
+h1{
     padding-top: 25px;
     max-width: 100%;
     box-sizing: border-box;
 }
+
+h2, h3 {
+    padding-top: 10px;
+ }
+ p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+ }
 .logo {
     background: rgb(255, 255, 255);
     width: 100%;
@@ -62,7 +70,6 @@ nav {
     opacity: 1;
 }
 main {
-   /* background: #ffffff url("vinil-bg.jpg") no-repeat center; */
    background-color: rgba(48, 48, 48, 0.699);
     min-height: 50em;
     width: 100%;
@@ -80,7 +87,8 @@ del{
 }
 .grid{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 100px);
   grid-gap: 30px;
   
   align-items: start;
@@ -92,12 +100,14 @@ del{
   box-shadow: 10px 10px 15px 0px  rgba(0, 0, 0, 0.5);
   background-color: white;
   transition: all 1s ease-out;
+  max-width: 100%;
 }
 article:hover{
     transform: scale(1.1);
 }
 .grid > article img {
   max-width: 100%;
+  padding-top: 10px;
 }
 .text {
   padding: 0px 20px 20px;
