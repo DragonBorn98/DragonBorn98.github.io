@@ -103,7 +103,7 @@ article:hover{
   padding: 0px 20px 20px;
 }
 .text > button {
-  background: rgba(255, 0, 0, 0.781);
+  background: rgba(250, 37, 37, 0.781);
   border: 0;
   color: white;
   padding: 10px;
@@ -114,9 +114,10 @@ article:hover{
   }
   button{
       margin-top: 5px;
+      border-radius: 5px;
   }
   button:hover{
-      background-color: rgba(255, 0, 0, 0.61);
+      background-color: rgba(255, 0, 0, 0.932);
       transition: 1s;
   }
   .footer{
